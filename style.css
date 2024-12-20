@@ -1,0 +1,4935 @@
+*{
+    font-family: 'Space Grotesk';
+}
+
+h5,p{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-image: url(img/hero-background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.025);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 4vw 2vw 4vw;
+    height: 4vmax;
+}
+
+.logo{
+    display: flex;
+    width: 6.8vmax;
+    height: 1.5vmax;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 55vmax;
+}
+
+.menu a{
+    font-size: 0.8vmax;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+
+.nav-buttons{
+    display: flex;
+    gap: 2.5vmax;
+}
+
+.hamburger{
+    display: none;
+}
+
+.login{
+    font-size: 0.9vmax;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.get-started{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8vmax;
+    border: solid;
+    border-width: 0.15vmax;
+    border-radius: 0.5vmax;
+    color: white;
+    width: 7.5vmax;
+    height: 3vmax;
+    border-color: rgba(255, 255, 255, 1);
+    background-color: rgba(3, 33, 112, 1);
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 34vmax;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4vw;
+    gap: 2vmax;
+}
+
+.hero-text h1{
+    width: 65vmax;
+    font-size: 3.2vmax;
+    margin: 0;
+    color: rgba(11, 50, 153, 1);
+    text-shadow: 
+        2px 2px 0 white,
+        -2px -2px 0 white,
+        -2px 2px 0 white,
+        2px -2px 0 white;
+}
+
+.hero-text p{
+    width: 50vmax;
+    font-size: 1vmax;
+    margin: 0;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+.hero-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vmax;
+    gap: 1.5vmax; 
+}
+
+.hero-buttons .employers{ 
+    width: 12vmax;
+    height: 3.5vmax;
+    font-size: 0.9vmax;
+    font-weight: 700;
+    border: solid;
+    border-radius: 0.5vmax;
+    border-width: 0.2vmax;
+    border-color: white;
+    color: rgba(3, 33, 112, 1);
+    background-color: rgba(186, 205, 209, 1);
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.hero-buttons .candidates{ 
+    width: 12vmax;
+    height: 3.5vmax;
+    font-size: 0.9vmax;
+    font-weight: 700;
+    border: solid;
+    border-radius: 0.5vmax;
+    border-width: 0.2vmax;
+    border-color: white;
+    color: white;
+    background-color: rgba(3, 33, 112, 1);
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.section-one{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5vmax 4vmax;
+    height: 40vmax;
+    gap: 20vmax;
+    background: 
+      url('img/section-one-left.png') no-repeat left center,
+      url('img/section-one-right.png') no-repeat right center;
+    background-size: 25vmax 46vmax, 25vmax 46vmax;
+ }
+
+.section-one-text{
+    display: flex;
+    flex-direction: column;
+    width: 28vmax;
+}
+
+.section-one h1{
+    font-size: 2.4vmax;
+    margin-top: 0;
+    color: rgba(11, 50, 153, 1);
+  }
+
+.section-one-text p{
+    font-size: 1vmax;
+    margin-top: 0;
+    margin-bottom: 1vmax;
+}
+
+.section-one-text .watch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vmax;
+}
+
+.section-one-text i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5vmax;
+    height: 1.5vmax;
+    font-size: 0.7vmax;
+    color: white;
+    background-color: rgba(3, 33, 112, 1);
+    border-radius: 1.5vmax;
+}
+
+.section-one-text button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vmax;
+    height: 3vmax;
+    font-size: 0.9vmax;
+    border: solid;
+    border-radius: 0.5vmax;
+    border-width: 0.2vmax;
+    border-color: rgba(3, 33, 112, 1);
+    color: rgba(3, 33, 112, 1);
+    background-color: transparent;
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.section-one-video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44vmax;
+    height: 25vmax;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 2vmax;
+    box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.25);
+}
+
+.section-one-video i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vmax;
+    width: 5vmax;
+    height: 5vmax;
+    border-radius: 2.5vmax;
+    background: linear-gradient(160deg, rgba(255, 255, 255, 1), rgba(251, 251, 251, 0.15));
+}
+
+.section-hire-me{
+    display: flex;
+    flex-direction: column;
+    padding: 5vmax 4vmax;
+    height: 145vmax;
+    background: 
+        url('img/hero-background.png') no-repeat top center,
+        url('img/hero-background.png') no-repeat bottom center;
+    background-size: 100vmax 46vmax, 100vmax 46vmax;
+    background-color: rgba(3, 25, 87, 1);
+    background-repeat: no-repeat;
+}
+
+.section-hire-me .heading{
+    display: flex;
+    align-items: center;
+    gap: 1vmax;
+    font-size: 1.3vmax;
+    font-weight: 700;
+    color: white;
+}
+
+.section-hire-me .heading span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vmax;
+    height: 5vmax;
+    font-size: 2.3vmax;
+    font-weight: 700;
+    border-radius: 0.5vmax;
+    background-color: white;
+    color: rgba(11, 50, 153, 1);
+}
+
+.section-hire-me .access-a-constant{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4vmax;
+}
+
+
+.section-hire-me .access-a-constant .cards{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section-hire-me .access-a-constant .cards .card1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 0.2vmax 2vmax;
+    margin: 5vmax 0vmax 1vmax 0vmax;
+    width: 40vmax;
+    height: 5vmax;
+    border-radius: 0.7vmax;
+    gap: 2vmax;
+}
+
+.section-hire-me .access-a-constant .cards .card1 img{
+    width: 4.2vmax;
+    height: 4.2vmax;
+}
+
+.section-hire-me .access-a-constant .cards .card1 .card1-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vmax;
+}
+
+.section-hire-me .access-a-constant .cards .card1  .card1-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+.section-hire-me .access-a-constant .cards .card1 .card1-text .card1-name h5{
+    font-size: 0.9vmax
+}
+
+.section-hire-me .access-a-constant .cards .card1 .card1-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.9vmax;
+}
+
+.graduate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+.university{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+.section-hire-me .access-a-constant .cards .card1 .card1-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+button.application{
+    border: none;
+    background-color: rgba(3, 33, 112, 1);
+    color: white;
+    font-size: 0.7vmax;
+    font-weight: 300;
+    width: 8vmax;
+    height: 2.5vmax;
+    border-radius: 0.5vmax;
+}
+
+button.bookmark{
+    border: none;
+    background-color: rgba(216, 216, 216, 1);
+    color: rgba(139, 139, 139, 1);
+    font-size: 1vmax;
+    font-weight: 300;
+    width: 2.5vmax;
+    height: 2.5vmax;
+    border-radius: 0.5vmax;
+}
+
+
+.section-hire-me .access-a-constant .cards .card2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 0.2vmax 2vmax;
+    margin: 0.5vmax 0vmax 1vmax 0vmax;
+    width: 40vmax;
+    height: 5vmax;
+    border-radius: 0.7vmax;
+    gap: 2vmax;
+}
+
+.section-hire-me .access-a-constant .cards .card2 img{
+    width: 4.2vmax;
+    height: 4.2vmax;
+}
+
+.section-hire-me .access-a-constant .cards .card2 .card2-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vmax;
+}
+
+.section-hire-me .access-a-constant .cards .card2 .card2-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+.section-hire-me .access-a-constant .cards .card2 .card2-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.9vmax;
+}
+
+.graduate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+.university{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+.section-hire-me .access-a-constant .cards .card2 .card2-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+button.application{
+    border: none;
+    background-color: rgba(3, 33, 112, 1);
+    color: white;
+    font-size: 0.7vmax;
+    font-weight: 300;
+    width: 8vmax;
+    height: 2.5vmax;
+    border-radius: 0.5vmax;
+}
+
+button.bookmark{
+    border: none;
+    background-color: rgba(216, 216, 216, 1);
+    color: rgba(139, 139, 139, 1);
+    font-size: 1vmax;
+    font-weight: 300;
+    width: 2.5vmax;
+    height: 2.5vmax;
+    border-radius: 0.5vmax;
+} 
+
+.section-hire-me .access-a-constant .cards .card3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 0.2vmax 2vmax;
+    margin: 0.5vmax 0vmax 1vmax 0vmax;
+    width: 40vmax;
+    height: 5vmax;
+    border-radius: 0.7vmax;
+    gap: 2vmax;
+}
+
+.section-hire-me .access-a-constant .cards .card3 img{
+    width: 4.2vmax;
+    height: 4.2vmax;
+}
+
+.section-hire-me .access-a-constant .cards .card3 .card3-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vmax;
+}
+
+.section-hire-me .access-a-constant .cards .card3 .card3-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+.section-hire-me .access-a-constant .cards .card3 .card3-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.9vmax;
+}
+
+.graduate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+.graduate p{
+    font-size: 0.8vmax;
+}
+
+.university{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+.university p{
+    font-size: 0.8vmax;
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+.location p{
+    font-size: 0.8vmax;
+}
+
+.section-hire-me .access-a-constant .cards .card3 .card3-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+button.application{
+    border: none;
+    background-color: rgba(3, 33, 112, 1);
+    color: white;
+    font-size: 0.7vmax;
+    font-weight: 300;
+    width: 8vmax;
+    height: 2.5vmax;
+    border-radius: 0.5vmax;
+}
+
+button.bookmark{
+    border: none;
+    background-color: rgba(216, 216, 216, 1);
+    color: rgba(139, 139, 139, 1);
+    font-size: 1vmax;
+    font-weight: 300;
+    width: 2.5vmax;
+    height: 2.5vmax;
+    border-radius: 0.5vmax;
+}
+
+
+.section-hire-me .access-a-constant .text{
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    color: white;    
+}
+
+.section-hire-me .access-a-constant .text h5{
+    font-size: 3vmax;
+    font-weight: 700;
+}
+
+.section-hire-me .access-a-constant .text p{
+    font-size: 1.5vmax;
+    font-weight: 400;
+}
+
+.easy-high-turnover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15vmax 0vmax 1vmax 0vmax;
+    gap: 15.5vmax;
+}
+
+.card-easy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 0.2vmax 2vmax;
+    width: 32vmax;
+    height: 10vmax;
+    border-radius: 0.7vmax;
+    gap: 3vmax;
+}
+
+.easy-profile{
+    display: flex;
+    align-items: center;
+    width: 5vmax;
+    height: 5vmax;
+}
+
+.easy-profile img{
+    width: 6vmax;
+    height: 6vmax;
+}
+
+
+.card-easy-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vmax;
+}
+
+.easy-name{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 1.2vmax;
+    font-weight: 700;
+}
+
+.easy-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vmax;
+    margin: 0vmax 0vmax 0.6vmax 0vmax;
+}
+
+.easy-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(3, 33, 112, 1);
+    height: 2vmax;
+    border-radius: 0.5vmax;
+}
+
+.easy-button button{
+    border: none;
+    background-color:rgba(3, 33, 112, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.9vmax;
+    font-weight: 700;
+    cursor: pointer;                
+}
+
+.text-easy{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 50vmax;
+    gap: 1vmax;
+}
+
+.text-easy h5{
+    font-size: 3vmax;
+    font-weight: 700;
+}
+
+.text-easy p{
+    font-size: 1.5vmax;
+    font-weight: 400;
+}
+
+.build-company{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7.5vmax;
+    margin-top: 15vmax;
+}
+
+.build-text{
+    display: flex;
+    flex-direction: column;
+    width: 40vmax;
+}
+
+.build-text h5{
+    color: white;
+    font-size: 3vmax;
+    font-weight: 700;
+}
+
+.build-text p{
+    color: white;
+    font-size: 1.5vmax;
+    font-weight: 400;
+}
+
+.build-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 41.5vmax;
+    height: 28vmax;
+    border-radius: 1vmax;
+}
+
+.build-image img{
+    width: 38vmax;
+    height: 25vmax;
+}
+
+.find-candidate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10.5vmax;
+    margin-top: 15vmax;
+}
+
+.find-image{
+    width: 40vmax;
+    margin-left: -3vmax;
+}
+
+.find-image img{
+    width: 40vmax;
+    height: 18vmax;
+}
+
+.find-text{
+    display: flex;
+    flex-direction: column;
+    width: 40vmax;
+}
+    
+.find-text h5{
+    color: white;
+    font-size: 3vmax;
+    font-weight: 700;
+}
+
+.find-text p{
+    color: white;
+    font-size: 1.5vmax;
+    font-weight: 400;
+}
+
+.for-candidate{
+    display: flex;
+    flex-direction: column;
+    padding: 5vmax 4vmax;
+    height: 75vmax;
+    background: url('img/hero-background.png') no-repeat bottom center;
+    background-color: rgba(0, 17, 63, 1);
+}
+
+.for-candidate-heading{
+    display: flex;
+    align-items: center;
+    gap: 1vmax;
+    font-size: 1.3vmax;
+    font-weight: 700;
+    color: white;
+    margin-top: 3vmax;
+}
+
+.for-candidate-heading span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vmax;
+    height: 5vmax;
+    font-size: 2.3vmax;
+    font-weight: 700;
+    border-radius: 0.5vmax;
+    background-color: white;
+    color: rgba(11, 50, 153, 1);
+}
+
+.for-candidate-details{
+    display: flex;
+    margin-top: 5vmax;
+    gap: 9vmax;
+}
+
+.for-candidate-images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40vmax;
+    gap: 2vmax;
+}
+
+.UI-Design{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 18vmax;
+    height: 24vmax;
+    text-align: left;
+}
+
+.UI-Design img{
+    margin-top: 1.4vmax;
+    width: 15vmax;
+    height: 18vmax;
+}
+
+.UI-Design p{
+    font-size: 1.3vmax;
+    font-weight: 700;
+    margin-top: 1vmax;
+    margin-left: -2.5vmax;
+}
+
+.data-analyst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 18vmax;
+    height: 24vmax;
+    text-align: left;
+}
+
+.data-analyst img{
+    margin-top: 1.4vmax;
+    width: 15vmax;
+    height: 18vmax;
+}
+
+.data-analyst p{
+    font-size: 1.3vmax;
+    font-weight: 700;
+    margin-top: 1vmax;
+    margin-left: -2.5vmax;
+}
+
+.graphic-design{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 18vmax;
+    height: 24vmax;
+    text-align: left;
+}
+
+.graphic-design img{
+    margin-top: 1.4vmax;
+    width: 15vmax;
+    height: 18vmax;
+}
+
+.graphic-design p{
+    font-size: 1.3vmax;
+    font-weight: 700;
+    margin-top: 1vmax;
+    margin-left: -2.5vmax;
+}
+
+.trainee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 18vmax;
+    height: 24vmax;
+    text-align: left;
+}
+
+.trainee img{
+    margin-top: 1.4vmax;
+    width: 15vmax;
+    height: 18vmax;
+}
+
+.trainee p{
+    font-size: 1.3vmax;
+    font-weight: 700;
+    margin-top: 1vmax;
+    margin-left: -2.5vmax;
+}
+
+.for-candidate-text{
+    display: flex;
+    flex-direction: column;
+    gap: 6vmax;
+    width: 43vmax;
+}
+
+.for-candidate-text p{
+    font-size: 2.3vmax;
+    font-weight: 700;
+    line-height: 3vmax;
+    color: white;
+} 
+
+.for-candidate-text span{
+    font-size: 1.3vmax;
+    font-weight: 400;
+    line-height: 2vmax;
+    color: white;
+} 
+
+
+.section-feature{
+    display: flex;
+    flex-direction: column;
+    padding: 7vmax 4vmax;
+    height: 150vmax;
+    background: url('img/hero-background.png') no-repeat bottom center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section-feature .heading h1{
+    font-size: 2.3vmax;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+ 
+.section-feature .heading .line-under-heading{
+    width: 4vmax;
+    height: 0.9vmax;
+    border-radius: 1vmax;
+    background-color: rgba(3, 33, 112, 1);
+    margin-top: 0.5vmax;
+    margin-left: 0.5vmax;
+}
+
+.feature-options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vmax;
+    margin-top: 4vmax;
+}
+
+.resume-builder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vmax 2vmax 0 2vmax;
+    width: 35vmax;
+    height: 40vmax;
+    gap: 1.5vmax;
+    border-radius: 2vmax;
+    background-color: rgba(244, 246, 251, 1);
+    overflow: hidden;
+}
+
+.resume-builder h3{
+    font-size: 2.3vmax;
+    font-weight: 700;
+    color: rgba(3, 49, 172, 1);
+    margin-bottom: 0;
+}
+
+.resume-builder p{
+    font-size: 0.9vmax;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.resume-builder .learn-more{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vmax;
+    border: solid;
+    border-radius: 0.5vmax;
+    border-width: 0.2vmax;
+    border-color: rgba(3, 33, 112, 1);
+    color: rgba(3, 33, 112, 1);
+    background-color: transparent;
+    width: 10vmax;
+    height: 2.5vmax;
+    font-size: 0.9vmax;
+    font-weight: 600;
+}
+
+.resume-builder img{
+    display: flex;
+    width: 28vmax;
+    height: 30vmax;
+}
+
+.online-events{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vmax 2vmax 0 2vmax;
+    width: 35vmax;
+    height: 40vmax;
+    gap: 1.5vmax;
+    border-radius: 2vmax;
+    background-color: rgba(244, 246, 251, 1);
+    overflow: hidden;
+}
+
+.online-events h3{
+    font-size: 2.3vmax;
+    font-weight: 700;
+    color: rgba(3, 49, 172, 1);
+    margin-bottom: 0;
+}
+
+.online-events p{
+    font-size: 0.9vmax;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.online-events .learn-more{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vmax;
+    border: solid;
+    border-radius: 0.5vmax;
+    border-width: 0.2vmax;
+    border-color: rgba(3, 33, 112, 1);
+    color: rgba(3, 33, 112, 1);
+    background-color: transparent;
+    width: 10vmax;
+    height: 2.5vmax;
+    font-size: 0.9vmax;
+    font-weight: 600;
+}
+
+.online-events img{
+    display: flex;
+    width: 28vmax;
+    height: 30vmax;
+}
+
+.Job-Boards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vmax 2vmax 0 2vmax;
+    width: 35vmax;
+    height: 40vmax;
+    gap: 1.5vmax;
+    border-radius: 2vmax;
+    background-color: rgba(244, 246, 251, 1);
+    overflow: hidden;
+}
+
+.Job-Boards h3{
+    font-size: 2.3vmax;
+    font-weight: 700;
+    color: rgba(3, 49, 172, 1);
+    margin-bottom: 0;
+}
+
+.Job-Boards p{
+    font-size: 0.9vmax;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.Job-Boards .learn-more{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vmax;
+    border: solid;
+    border-radius: 0.5vmax;
+    border-width: 0.2vmax;
+    border-color: rgba(3, 33, 112, 1);
+    color: rgba(3, 33, 112, 1);
+    background-color: transparent;
+    width: 10vmax;
+    height: 2.5vmax;
+    font-size: 0.9vmax;
+    font-weight: 600;
+}
+
+.Job-Boards img{
+    display: flex;
+    width: 28vmax;
+    height: 30vmax;
+}
+
+.Partnership{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vmax 2vmax 0 2vmax;
+    width: 35vmax;
+    height: 40vmax;
+    gap: 1.5vmax;
+    border-radius: 2vmax;
+    background-color: rgba(244, 246, 251, 1);
+    overflow: hidden;
+}
+
+.Partnership h3{
+    font-size: 2.3vmax;
+    font-weight: 700;
+    color: rgba(3, 49, 172, 1);
+    margin-bottom: 0;
+}
+
+.Partnership p{
+    font-size: 0.9vmax;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.Partnership .learn-more{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vmax;
+    border: solid;
+    border-radius: 0.5vmax;
+    border-width: 0.2vmax;
+    border-color: rgba(3, 33, 112, 1);
+    color: rgba(3, 33, 112, 1);
+    background-color: transparent;
+    width: 10vmax;
+    height: 2.5vmax;
+    font-size: 0.9vmax;
+    font-weight: 600;
+}
+
+.Partnership img{
+    display: flex;
+    width: 28vmax;
+    height: 30vmax;
+}
+
+.platform{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0vmax 1vmax;
+    gap: 15vmax;
+    margin-top: 15vmax;
+}
+
+.platform-heading h1{
+    font-size: 3vmax;
+    font-weight: 700;
+    width: 20vmax;
+    color:rgba(3, 49, 172, 1);
+}
+
+.platform-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 55vmax;
+    gap: 3vmax;
+}
+
+.platform-card1{
+    display: flex;
+    flex-direction: column;
+    width: 20vmax;
+    height: 12vmax;
+    padding: 3vmax 2.5vmax;
+    gap: 2vmax;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1vmax;
+    box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+}
+
+.platform-card1 h4{
+    margin: 0;
+    font-size: 1.2vmax;
+    color: rgba(3, 33, 112, 1);
+}
+
+.platform-card1 p{
+    font-size: 0.9vmax;
+    margin: 0;
+    padding: 0;
+}
+
+.platform-card2{
+    display: flex;
+    flex-direction: column;
+    width: 20vmax;
+    height: 12vmax;
+    padding: 3vmax 2.5vmax;
+    gap: 1vmax;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1vmax;
+    box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+}
+
+.platform-card2 h4{
+    margin: 0;
+    font-size: 1.2vmax;
+    color: rgba(3, 33, 112, 1);
+}
+
+.platform-card2 p{
+    font-size: 0.9vmax;
+    margin: 0;
+    padding: 0;
+}
+
+.platform-card3{
+    display: flex;
+    flex-direction: column;
+    width: 20vmax;
+    height: 12vmax;
+    padding: 3vmax 2.5vmax;
+    gap: 1vmax;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1vmax;
+    box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+}
+
+.platform-card3 h4{
+    margin: 0;
+    font-size: 1.2vmax;
+    color: rgba(3, 33, 112, 1);
+}
+
+.platform-card3 p{
+    font-size: 0.9vmax;
+    margin: 0;
+    padding: 0;
+}
+
+.platform-card4{
+    display: flex;
+    flex-direction: column;
+    width: 20vmax;
+    height: 12vmax;
+    padding: 3vmax 2.5vmax;
+    gap: 1vmax;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1vmax;
+    box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+}
+
+.platform-card4 h4{
+    margin: 0;
+    font-size: 1.2vmax;
+    color: rgba(3, 33, 112, 1);
+}
+
+.platform-card4 p{
+    font-size: 0.9vmax;
+    margin: 0;
+    padding: 0;
+}
+
+.recruit-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url(img/Recruit-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(28, 28, 28, 0.4);
+    height: 55vmax;
+    margin-top: 10vmax;
+    color: white;
+}
+
+.recruit-section h3{
+    font-size: 3.5vmax;
+    font-weight: 700;
+    margin: 0;
+}
+
+.recruit-section p{
+    font-size: 1.5vmax;
+    font-weight: 400;
+    margin: 0;
+}
+
+.recruit-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vmax;
+    width: 45vmax;
+}
+
+.recruit-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vmax;
+    border: solid;
+    border-color: white;
+    border-width: 0.25vmax;
+    border-radius: 0.8vmax;
+    color: white;
+    background-color: transparent;
+    width: 15vmax;
+    height: 3vmax;
+    font-size: 1.1vmax;
+    font-weight: 600;
+    transition: 0.15s;
+}
+
+.recruit-button:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vmax;
+    border: solid;
+    border-color: white;
+    border-radius: 0.8vmax;
+    color: black;
+    background-color: white;
+    width: 15vmax;
+    height: 3vmax;
+    font-size: 1.2vmax;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    padding: 7vmax 4vmax;
+    gap: 10vmax;
+    color: white;
+    background-color: rgba(3, 33, 112, 1);
+}
+
+footer h4{
+    font-size: 1.1vmax;
+    margin: 0;
+    margin-bottom: 0.6vmax;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9vmax;
+}
+
+footer .details{
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    width: 25vmax;
+}
+
+footer .details .logo{
+    width: 12vmax;
+    height: 3vmax;
+}
+
+footer .details .logo img{
+    width: 12vmax;
+    height: 2.5vmax;
+}
+
+footer .details .vision p{
+    font-size: 1vmax;
+    font-weight: 400;
+}
+
+footer .details .contact p{
+    font-size: 1vmax;
+    font-weight: 400;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vmax;
+}
+
+.social-icons i{
+    font-size: 1vmax;
+    font-weight: 400;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    gap: 10vmax;
+}
+
+
+.products{
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+} 
+
+.company{
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+}
+
+.resources{
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+}
+
+.support{
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+}
+
+.copyrights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 23, 84, 1);
+    color: white;
+    height: 6vmax;
+}
+
+.copyrights h1{
+    font-size: 1.5vmax;
+    font-weight: 700;
+}
+
+
+
+
+
+
+@media (max-width: 830px) {
+
+    .hamburger{
+        display: none;
+    }
+
+    .section-one{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5vmax 4vmax;
+        height: 40vmax;
+        gap: 10vmax;
+        background: 
+          url('img/section-one-left.png') no-repeat left center,
+          url('img/section-one-right.png') no-repeat right center;
+        background-size: 25vmax 46vmax, 25vmax 46vmax;
+     }
+
+    .for-candidate-images{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 45vmax;
+        gap: 1.5vmax;
+    }
+
+    .for-candidate-text{
+        display: flex;
+        flex-direction: column;
+        gap: 4vmax;
+        width: 43vmax;
+    }
+
+    .platform{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0vmax 1vmax;
+        gap: 10vmax;
+        margin-top: 15vmax;
+    }
+    
+    .platform-heading h1{
+        font-size: 3vmax;
+        font-weight: 700;
+        width: 20vmax;
+        color:rgba(3, 49, 172, 1);
+    }
+    
+    .platform-cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 55vmax;
+        gap: 3vmax;
+    }
+    
+    .platform-card1{
+        display: flex;
+        flex-direction: column;
+        width: 19vmax;
+        height: 12vmax;
+        padding: 3vmax 2.5vmax;
+        gap: 2vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card1 h4{
+        margin: 0;
+        font-size: 1.2vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card1 p{
+        font-size: 0.9vmax;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .platform-card2{
+        display: flex;
+        flex-direction: column;
+        width: 19vmax;
+        height: 12vmax;
+        padding: 3vmax 2.5vmax;
+        gap: 1vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card2 h4{
+        margin: 0;
+        font-size: 1.2vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card2 p{
+        font-size: 0.9vmax;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .platform-card3{
+        display: flex;
+        flex-direction: column;
+        width: 19vmax;
+        height: 12vmax;
+        padding: 3vmax 2.5vmax;
+        gap: 1vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card3 h4{
+        margin: 0;
+        font-size: 1.2vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card3 p{
+        font-size: 0.9vmax;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .platform-card4{
+        display: flex;
+        flex-direction: column;
+        width: 19vmax;
+        height: 12vmax;
+        padding: 3vmax 2.5vmax;
+        gap: 1vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card4 h4{
+        margin: 0;
+        font-size: 1.2vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card4 p{
+        font-size: 0.9vmax;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+
+
+@media (max-width: 780px) {
+
+    .hamburger{
+        display: none;
+    }
+
+    .hero-buttons{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2vmax;
+        gap: 2.5vmax; 
+    }
+
+    .hero-buttons .employers{ 
+        width: 15vmax;
+        height: 4.2vmax;
+        font-size: 1vmax;
+        font-weight: 700;
+        border: solid;
+        border-radius: 0.5vmax;
+        border-width: 0.3vmax;
+        border-color: white;
+        color: rgba(3, 33, 112, 1);
+        background-color: rgba(186, 205, 209, 1);
+        box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+
+    .hero-buttons .candidates{ 
+        width: 15vmax;
+        height: 4.2vmax;
+        font-size: 1vmax;
+        font-weight: 700;
+        border: solid;
+        border-radius: 0.5vmax;
+        border-width: 0.3vmax;
+        border-color: white;
+        color: white;
+        background-color: rgba(3, 33, 112, 1);
+        box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 6vmax;
+        gap: 2vmax;
+    }
+
+    .hero-text h1{
+        width: 75vmax;
+        font-size: 3.2vmax;
+        margin: 0;
+        color: rgba(11, 50, 153, 1);
+        text-shadow: 
+            2px 2px 0 white,
+            -2px -2px 0 white,
+            -2px 2px 0 white,
+            2px -2px 0 white;
+    }
+
+    .hero-text p{
+        width: 60vmax;
+        font-size: 1.5vmax;
+        margin: 0;
+        color: rgba(0, 0, 0, 1);
+
+    }
+    
+    .section-one{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 5vmax 4vmax;
+        height: 50vmax;
+        gap: 5vmax;
+        background: 
+          url('img/section-one-left.png') no-repeat left center,
+          url('img/section-one-right.png') no-repeat right center;
+        background-size: 25vmax 46vmax, 25vmax 46vmax;
+     }
+    
+    .section-one-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 60vmax;
+        gap: 0.5vmax;
+    }
+    
+    .section-one h1{
+        font-size: 2.4vmax;
+        margin-top: 0;
+        color: rgba(11, 50, 153, 1);
+      }
+    
+    .section-one-text p{
+        font-size: 1.2vmax;
+        margin-top: 0;
+        margin-bottom: 1vmax;
+    }
+    
+    .section-one-text .watch{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        gap: 0.5vmax;
+    }
+    
+    .section-one-text i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 1.5vmax;
+        height: 1.5vmax;
+        font-size: 0.7vmax;
+        color: white;
+        background-color: rgba(3, 33, 112, 1);
+        border-radius: 1.5vmax;
+    }
+    
+    .section-one-text button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 12vmax;
+        height: 4vmax;
+        font-size: 1vmax;
+        border: solid;
+        border-radius: 0.5vmax;
+        border-width: 0.2vmax;
+        border-color: rgba(3, 33, 112, 1);
+        color: rgba(3, 33, 112, 1);
+        background-color: transparent;
+        box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+    
+    .section-one-video{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44vmax;
+        height: 25vmax;
+        color: white;
+        background-color: black;
+        border: none;
+        border-radius: 2vmax;
+        box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.25);
+    }
+    
+    .section-one-video i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5vmax;
+        width: 5vmax;
+        height: 5vmax;
+        border-radius: 2.5vmax;
+        background: linear-gradient(160deg, rgba(255, 255, 255, 1), rgba(251, 251, 251, 0.15));
+    }
+
+    .section-hire-me{
+        display: flex;
+        flex-direction: column;
+        padding: 5vmax 4vmax;
+        height: auto;
+        background: 
+            url('img/hero-background.png') no-repeat top center,
+            url('img/hero-background.png') no-repeat bottom center;
+        background-size: 100vmax 46vmax, 100vmax 46vmax;
+        background-color: rgba(3, 25, 87, 1);
+        background-repeat: no-repeat;
+    }
+    
+    .section-hire-me .heading{
+        display: flex;
+        align-items: center;
+        gap: 1vmax;
+        font-size: 1.3vmax;
+        font-weight: 700;
+        color: white;
+    }
+    
+    .section-hire-me .heading span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15vmax;
+        height: 5vmax;
+        font-size: 2.3vmax;
+        font-weight: 700;
+        border-radius: 0.5vmax;
+        background-color: white;
+        color: rgba(11, 50, 153, 1);
+    }
+    
+    .section-hire-me .access-a-constant{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 2vmax;
+        margin-top: 10vmax;
+        text-align: center;
+    }
+    
+    
+    .section-hire-me .access-a-constant .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 2;
+    }
+    
+    
+    .section-hire-me .access-a-constant .cards .card1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: white;
+        padding: 0.2vmax 2vmax;
+        margin: 5vmax 0vmax 1vmax 0vmax;
+        width: 45vmax;
+        height: 8vmax;
+        border-radius: 0.7vmax;
+        gap: 2vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1 img{
+        width: 5.2vmax;
+        height: 5.2vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1 .card1-text{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1 .card1-name{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card1 .card1-text .card1-name h5{
+        font-size: 1.5vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card1 .card1-name i{
+       font-size: 1.5vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1 .card1-details{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.9vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card1 .card1-details p{
+        font-size: 1vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card1 .card1-buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    button.application{
+        border: none;
+        background-color: rgba(3, 33, 112, 1);
+        color: white;
+        font-size: 1vmax;
+        font-weight: 300;
+        width: 10vmax;
+        height: 2.8vmax;
+        border-radius: 0.5vmax;
+    }
+    
+    button.bookmark{
+        border: none;
+        background-color: rgba(216, 216, 216, 1);
+        color: rgba(139, 139, 139, 1);
+        font-size: 1.2vmax;
+        font-weight: 300;
+        width: 2.8vmax;
+        height: 2.8vmax;
+        border-radius: 0.5vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: white;
+        padding: 0.2vmax 2vmax;
+        margin: 0.5vmax 0vmax 1vmax 0vmax;
+        width: 45vmax;
+        height: 8vmax;
+        border-radius: 0.7vmax;
+        gap: 2vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card2 img{
+        width: 5.2vmax;
+        height: 5.2vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card2 .card2-text{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card2 .card2-name{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card2 .card2-text .card2-name h5{
+        font-size: 1.5vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card2 .card2-name i{
+       font-size: 1.5vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card2 .card2-details{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.9vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card2 .card2-details p{
+        font-size: 1vmax;
+    }
+    
+    .graduate{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .university{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .location{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card2 .card2-buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    button.application{
+        border: none;
+        background-color: rgba(3, 33, 112, 1);
+        color: white;
+        font-size: 1vmax;
+        font-weight: 300;
+        width: 10vmax;
+        height: 2.8vmax;
+        border-radius: 0.5vmax;
+    }
+    
+    button.bookmark{
+        border: none;
+        background-color: rgba(216, 216, 216, 1);
+        color: rgba(139, 139, 139, 1);
+        font-size: 1.2vmax;
+        font-weight: 300;
+        width: 2.8vmax;
+        height: 2.8vmax;
+        border-radius: 0.5vmax;
+    } 
+
+    .section-hire-me .access-a-constant .cards .card3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: white;
+        padding: 0.2vmax 2vmax;
+        margin: 0.5vmax 0vmax 1vmax 0vmax;
+        width: 45vmax;
+        height: 8vmax;
+        border-radius: 0.7vmax;
+        gap: 2vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card3 img{
+        width: 5.2vmax;
+        height: 5.2vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card3 .card3-text{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card3 .card3-name{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card3 .card3-text .card3-name h5{
+        font-size: 1.5vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card3 .card3-name i{
+       font-size: 1.5vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card3 .card3-details{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.9vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card3 .card3-details p{
+        font-size: 1vmax;
+    }
+    
+    .graduate{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .university{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .location{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card3 .card3-buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    button.application{
+        border: none;
+        background-color: rgba(3, 33, 112, 1);
+        color: white;
+        font-size: 1vmax;
+        font-weight: 300;
+        width: 10vmax;
+        height: 2.8vmax;
+        border-radius: 0.5vmax;
+    }
+    
+    button.bookmark{
+        border: none;
+        background-color: rgba(216, 216, 216, 1);
+        color: rgba(139, 139, 139, 1);
+        font-size: 1.2vmax;
+        font-weight: 300;
+        width: 2.8vmax;
+        height: 2.8vmax;
+        border-radius: 0.5vmax;
+    } 
+
+    .section-hire-me .access-a-constant .text{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+        color: white;    
+        width: 60vmax;
+    }
+    
+    .section-hire-me .access-a-constant .text h5{
+        font-size: 3vmax;
+        font-weight: 700;
+    }
+    
+    .section-hire-me .access-a-constant .text p{
+        font-size: 1.5vmax;
+        font-weight: 400;
+    }
+
+    .easy-high-turnover{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 15vmax 0vmax 1vmax 0vmax;
+        gap: 10vmax;
+    }
+    
+    .card-easy{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: white;
+        padding: 0.2vmax 2vmax;
+        width: 38vmax;
+        height: 13vmax;
+        border-radius: 0.7vmax;
+        gap: 4vmax;
+    }
+    
+    .easy-profile{
+        display: flex;
+        align-items: center;
+        width: 8vmax;
+        height: 8vmax;
+    }
+    
+    .easy-profile img{
+        width: 8vmax;
+        height: 8vmax;
+    }
+    
+    
+    .card-easy-text{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vmax;
+    }
+    
+    .easy-name{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        font-size: 1.5vmax;
+        font-weight: 700;
+        gap: 0.7vmax;
+    }
+    
+    .easy-details{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5vmax;
+        margin: 0vmax 0vmax 0.6vmax 0vmax;
+        font-size: 2vmax;
+    }
+    
+
+    .easy-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(3, 33, 112, 1);
+        height: 3vmax;
+        border-radius: 0.5vmax;
+    }
+    
+    .easy-button button{
+        border: none;
+        background-color:rgba(3, 33, 112, 1);
+        color: rgba(255, 255, 255, 1);
+        font-size: 1.1vmax;
+        font-weight: 700;
+        cursor: pointer;                
+    }
+    
+    .text-easy{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 60vmax;
+        text-align: center;
+        gap: 1vmax;
+    }
+    
+    .text-easy h5{
+        font-size: 3vmax;
+        font-weight: 700;
+    }
+    
+    .text-easy p{
+        font-size: 1.5vmax;
+        font-weight: 400;
+    }
+
+    .build-company{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7.5vmax;
+        margin-top: 15vmax;
+    }
+    
+    .build-text{
+        display: flex;
+        flex-direction: column;
+        width: 60vmax;
+        gap: 0.5vmax;
+    }
+    
+    .build-text h5{
+        color: white;
+        font-size: 3vmax;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .build-text p{
+        color: white;
+        font-size: 1.5vmax;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .build-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        width: 50vmax;
+        height: 35vmax;
+        border-radius: 1vmax;
+    }
+    
+    .build-image img{
+        width: 47vmax;
+        height: 32vmax;
+    }
+
+    .find-candidate{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10.5vmax;
+        margin-top: 15vmax;
+    }
+    
+    .find-image{
+        width: 55vmax;
+        margin-left: -3vmax;
+    }
+    
+    .find-image img{
+        width: 55vmax;
+        height: 23vmax;
+    }
+    
+    .find-text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 60vmax;
+        gap: 0.5vmax;
+    }
+        
+    .find-text h5{
+        color: white;
+        font-size: 3vmax;
+        font-weight: 700;
+    }
+    
+    .find-text p{
+        color: white;
+        font-size: 1.5vmax;
+        font-weight: 400;
+    }
+
+    .resume-builder p{
+        font-size: 1.1vmax;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .online-events p{
+        font-size: 1.1vmax;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    .Job-Boards p{
+        font-size: 1.1vmax;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .Partnership p{
+        font-size: 1.1vmax;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    .platform{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0vmax 1vmax;
+        gap: 8vmax;
+        margin-top: 15vmax;
+    }
+
+    .platform-heading h1{
+        font-size: 3vmax;
+        font-weight: 700;
+        width: 40vmax;
+        color:rgba(3, 49, 172, 1);
+    }
+
+    .platform-cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 60vmax;
+        gap: 4vmax;
+    }
+
+    .platform-heading h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 3vmax;
+        font-weight: 700;
+        width: 40vmax;
+        color:rgba(3, 49, 172, 1);
+    }
+    
+    .platform-card1{
+        display: flex;
+        flex-direction: column;
+        width: 22vmax;
+        height: 12vmax;
+        padding: 3vmax 2.5vmax;
+        gap: 1.5vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card1 h4{
+        margin: 0;
+        font-size: 1.5vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card1 p{
+        font-size: 1vmax;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .platform-card2{
+        display: flex;
+        flex-direction: column;
+        width: 22vmax;
+        height: 12vmax;
+        padding: 3vmax 2.5vmax;
+        gap: 1vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card2 h4{
+        margin: 0;
+        font-size: 1.5vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card2 p{
+        font-size: 1vmax;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .platform-card3{
+        display: flex;
+        flex-direction: column;
+        width: 22vmax;
+        height: 12vmax;
+        padding: 3vmax 2.5vmax;
+        gap: 1vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card3 h4{
+        margin: 0;
+        font-size: 1.4vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card3 p{
+        font-size: 1vmax;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .platform-card4{
+        display: flex;
+        flex-direction: column;
+        width: 22vmax;
+        height: 12vmax;
+        padding: 3vmax 2.5vmax;
+        gap: 1vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card4 h4{
+        margin: 0;
+        font-size: 1.5vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card4 p{
+        font-size: 1vmax;
+        margin: 0;
+        padding: 0;
+    }
+
+    .section-feature{
+        display: flex;
+        flex-direction: column;
+        padding: 7vmax 4vmax;
+        height: auto;
+        background: url('img/hero-background.png') no-repeat bottom center;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .recruit-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background-image: url(img/Recruit-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: overlay;
+        background-color: rgba(28, 28, 28, 0.4);
+        height: 55vmax;
+        margin-top: 6vmax;
+        color: white;
+    }
+
+    .recruit-section h3{
+        font-size: 4vmax;
+        font-weight: 700;
+        margin: 0;
+    }
+    
+    .recruit-section p{
+        font-size: 2vmax;
+        font-weight: 400;
+        margin: 0;
+    }
+    
+    .recruit-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3vmax;
+        width: 60vmax;
+    }
+    
+    .recruit-button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1vmax;
+        border: solid;
+        border-color: white;
+        border-width: 0.25vmax;
+        border-radius: 0.8vmax;
+        color: white;
+        background-color: transparent;
+        width: 20vmax;
+        height: 5vmax;
+        font-size: 1.7vmax;
+        font-weight: 600;
+        transition: 0.15s;
+    }
+    
+    .recruit-button:hover{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1vmax;
+        border: solid;
+        border-color: white;
+        border-radius: 0.8vmax;
+        color: black;
+        background-color: white;
+        width: 20vmax;
+        height: 5vmax;
+        font-size: 1.7vmax;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 7vmax 4vmax;
+        gap: 6vmax;
+        color: white;
+        background-color: rgba(3, 33, 112, 1);
+    }
+    
+    footer h4{
+        font-size: 1.5vmax;
+        margin: 0;
+        margin-bottom: 0.6vmax;
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.2vmax;
+    }
+    
+    footer .details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5vmax;
+        width: 60vmax;
+    }
+    
+    footer .details .logo{
+        width: 12vmax;
+        height: 3vmax;
+    }
+    
+    footer .details .logo img{
+        width: 12vmax;
+        height: 2.5vmax;
+    }
+    
+    footer .details .vision p{
+        font-size: 1.3vmax;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    footer .details .contact p{
+        font-size: 1.3vmax;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .social-icons{
+        display: flex;
+        flex-direction: row;
+        gap: 1vmax;
+    }
+    
+    .social-icons i{
+        font-size: 1.5vmax;
+        font-weight: 400;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: row;
+        gap: 14vmax;
+    }
+    
+    
+    .products{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+    } 
+    
+    .company{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+    }
+    
+    .resources{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+    }
+    
+    .support{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+    }
+
+    .for-candidate{
+        display: flex;
+        flex-direction: column;
+        padding: 5vmax 4vmax;
+        height: auto;
+        background: url('img/hero-background.png') no-repeat bottom center;
+        background-color: rgba(0, 17, 63, 1);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .for-candidate-images{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 50vmax;
+        gap: 2vmax;
+    }
+
+    .for-candidate-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vmax;
+        gap: 5vmax;
+    }
+
+    .for-candidate-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 60vmax;
+        gap: 6vmax;
+    }
+    .for-candidate-text p{
+        font-size: 2.6vmax;
+        font-weight: 700;
+        line-height: 3vmax;
+        color: white;
+    } 
+    
+    .for-candidate-text span{
+        font-size: 1.5vmax;
+        font-weight: 400;
+        line-height: 2vmax;
+        color: white;
+    } 
+
+
+}
+
+
+
+@media (max-width: 640px) {
+
+    .hamburger{
+        display: none;
+    }
+
+    .for-candidate{
+        display: flex;
+        flex-direction: column;
+        padding: 5vmax 4vmax;
+        height: auto;
+        background: url('img/hero-background.png') no-repeat bottom center;
+        background-color: rgba(0, 17, 63, 1);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .for-candidate-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vmax;
+        gap: 9vmax;
+    }
+
+    .for-candidate-images{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 60vmax;
+        gap: 4vmax;
+    }
+    
+    .for-candidate-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 60vmax;
+        gap: 6vmax;
+    }
+    
+    .for-candidate-text p{
+        font-size: 2.6vmax;
+        font-weight: 700;
+        line-height: 3vmax;
+        color: white;
+    } 
+    
+    .for-candidate-text span{
+        font-size: 1.5vmax;
+        font-weight: 400;
+        line-height: 2vmax;
+        color: white;
+    } 
+
+    .section-feature{
+        display: flex;
+        flex-direction: column;
+        padding: 7vmax 4vmax;
+        height: auto;
+        background: url('img/hero-background.png') no-repeat bottom center;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: row;
+        gap: 8vmax;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 6vmax;
+        gap: 2vmax;
+    }
+
+    .hero-text h1{
+        width: 50vmax;
+        font-size: 3vmax;
+        margin: 0;
+        color: rgba(11, 50, 153, 1);
+        text-shadow: 
+            2px 2px 0 white,
+            -2px -2px 0 white,
+            -2px 2px 0 white,
+            2px -2px 0 white;
+    }
+
+    .hero-text p{
+        width: 45vmax;
+        font-size: 1.5vmax;
+        margin: 0;
+        color: rgba(0, 0, 0, 1);
+
+    } 
+}
+
+
+
+@media (max-width: 480px) {
+
+   /* .hamburger{
+        display: flex;
+        cursor: pointer;
+    }
+
+    .menu a{
+        display: none;
+        font-size: 0.8vmax;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 1);
+    }
+
+    .nav-buttons{
+        display: none;
+        gap: 2.5vmax;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4vmax;
+        gap: 2vmax;
+    }
+
+    .hero-text h1{
+        width: 50vmax;
+        font-size: 3vmax;
+        margin: 0;
+        color: rgba(11, 50, 153, 1);
+        text-shadow: 
+            2px 2px 0 white,
+            -2px -2px 0 white,
+            -2px 2px 0 white,
+            2px -2px 0 white;
+    }
+
+    .hero-text p{
+        width: 50vmax;
+        font-size: 1.5vmax;
+        margin: 0;
+        color: rgba(0, 0, 0, 1);
+
+    }
+
+    .section-hire-me .access-a-constant .text{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+        color: white;
+        width: 50vmax;  
+    }
+    
+    .section-hire-me .access-a-constant .text h5{
+        font-size: 2.7vmax;
+        font-weight: 700;
+    }
+    
+    .section-hire-me .access-a-constant .text p{
+        font-size: 1.5vmax;
+        font-weight: 400;
+    }
+
+    .section-hire-me .access-a-constant .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-hire-me .access-a-constant .cards .card1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        padding: 2vmax 2vmax;
+        margin: 5vmax 0vmax 1vmax 0vmax;
+        width: 40vmax;
+        height: auto;
+        border-radius: 0.7vmax;
+        gap: 2vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1 img{
+        width: 8vmax;
+        height: 8vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1 .card1-text{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1  .card1-name{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1 .card1-text .card1-name h5{
+        font-size: 1.5vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1 .card1-details{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.9vmax;
+    }
+    
+    .graduate{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .university{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .location{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1 .card1-buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    button.application{
+        border: none;
+        background-color: rgba(3, 33, 112, 1);
+        color: white;
+        font-size: 1vmax;
+        font-weight: 300;
+        width: 12vmax;
+        height: 3vmax;
+        border-radius: 0.5vmax;
+    }
+    
+    button.bookmark{
+        border: none;
+        background-color: rgba(216, 216, 216, 1);
+        color: rgba(139, 139, 139, 1);
+        font-size: 1.2vmax;
+        font-weight: 300;
+        width: 3vmax;
+        height: 3vmax;
+        border-radius: 0.5vmax;
+    }
+
+    .text-easy{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 50vmax;
+        gap: 1vmax;
+    }
+
+    .text-easy h5{
+        font-size: 2.7vmax;
+        font-weight: 700;
+    }
+    
+    .text-easy p{
+        font-size: 1.7vmax;
+        font-weight: 400;
+    }
+
+    .build-text{
+        display: flex;
+        flex-direction: column;
+        width: 50vmax;
+    }
+    
+    .build-text h5{
+        color: white;
+        font-size: 2.7vmax;
+        font-weight: 700;
+    }
+    
+    .build-text p{
+        color: white;
+        font-size: 1.7vmax;
+        font-weight: 400;
+    }
+
+    .find-text{
+        display: flex;
+        flex-direction: column;
+        width: 50vmax;
+    }
+        
+    .find-text h5{
+        color: white;
+        font-size: 2.7vmax;
+        font-weight: 700;
+    }
+    
+    .find-text p{
+        color: white;
+        font-size: 1.7vmax;
+        font-weight: 400;
+    }
+
+    .for-candidate{
+        display: flex;
+        flex-direction: column;
+        padding: 5vmax 4vmax;
+        height: auto;
+        background: url('img/hero-background.png') no-repeat bottom center;
+        background-color: rgba(0, 17, 63, 1);
+    }
+
+    .for-candidate-text{
+        display: flex;
+        flex-direction: column;
+        gap: 6vmax;
+        width: 50vmax;
+    }
+    
+    .for-candidate-text p{
+        font-size: 2.7vmax;
+        font-weight: 700;
+        line-height: 3vmax;
+        color: white;
+    } 
+    
+    .for-candidate-text span{
+        font-size: 1.7vmax;
+        font-weight: 400;
+        line-height: 2vmax;
+        color: white;
+    } 
+
+    .platform-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 55vmax;
+        gap: 3vmax;
+    }
+
+    .platform-card1{
+        display: flex;
+        flex-direction: column;
+        width: 45vmax;
+        height: 18vmax;
+        padding: 3vmax 4vmax;
+        gap: 3.5vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card1 h4{
+        margin: 0;
+        font-size: 2.2vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card1 p{
+        font-size: 1.7vmax;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .platform-card2{
+        display: flex;
+        flex-direction: column;
+        width: 45vmax;
+        height: 18vmax;
+        padding: 3vmax 4vmax;
+        gap: 2vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card2 h4{
+        margin: 0;
+        font-size: 2.2vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card2 p{
+        font-size: 1.7vmax;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .platform-card3{
+        display: flex;
+        flex-direction: column;
+        width: 45vmax;
+        height: 18vmax;
+        padding: 3vmax 4vmax;
+        gap: 2vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card3 h4{
+        margin: 0;
+        font-size: 2.2vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card3 p{
+        font-size: 1.7vmax;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .platform-card4{
+        display: flex;
+        flex-direction: column;
+        width: 45vmax;
+        height: 18vmax;
+        padding: 3vmax 4vmax;
+        gap: 2vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card4 h4{
+        margin: 0;
+        font-size: 2.2vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card4 p{
+        font-size: 1.7vmax;
+        margin: 0;
+        padding: 0;
+    }
+
+    .section-feature{
+        display: flex;
+        flex-direction: column;
+        padding: 7vmax 4vmax;
+        height: auto;
+        background: url('img/hero-background.png') no-repeat bottom center;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .recruit-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3vmax;
+        width: 50vmax;
+    }
+
+    footer .details{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+        width: 50vmax;
+    }
+    
+    footer .details .logo{
+        width: 12vmax;
+        height: 3vmax;
+    }
+    
+    footer .details .logo img{
+        width: 12vmax;
+        height: 2.5vmax;
+    }
+    
+    footer .details .vision p{
+        font-size: 1.5vmax;
+        font-weight: 400;
+    }
+    
+    footer .details .contact p{
+        font-size: 1.3vmax;
+        font-weight: 400;
+    }
+    
+    .social-icons{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5vmax;
+    }
+    
+    .social-icons i{
+        font-size: 1vmax;
+        font-weight: 400;
+    }
+    
+    .footer-content{
+        display: flex;
+        flex-direction: row;
+        gap: 5vmax;
+    }
+    
+    
+    .products{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+    } 
+    
+    .company{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+    }
+    
+    .resources{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+    }
+    
+    .support{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+    }
+    
+    .copyrights{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 23, 84, 1);
+        color: white;
+        height: 6vmax;
+    }
+    
+    .copyrights h1{
+        font-size: 1.5vmax;
+        font-weight: 700;
+    }
+
+    .for-candidate-images{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 40vmax;
+        gap: 2vmax;
+    }
+
+    .section-one{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5vmax 4vmax;
+        height: auto;
+        gap: 8vmax;
+        background: 
+          url('img/section-one-left.png') no-repeat left center,
+          url('img/section-one-right.png') no-repeat right center;
+        background-size: 25vmax 46vmax, 25vmax 46vmax;
+     }
+    
+    .section-one-text{
+        display: flex;
+        flex-direction: column;
+        width: 50vmax;
+        gap: 1.5vmax;
+    }
+    
+    .section-one h1{
+        font-size: 2.5vmax;
+        margin-top: 0;
+        color: rgba(11, 50, 153, 1);
+      }
+    
+    .section-one-text p{
+        font-size: 1.5vmax;
+        margin-top: 0;
+        margin-bottom: 1vmax;
+    }
+    
+    .section-one-text .watch{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5vmax;
+    }
+    
+    .section-one-text i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5vmax;
+        height: 2.5vmax;
+        font-size: 1.2vmax;
+        color: white;
+        background-color: rgba(3, 33, 112, 1);
+        border-radius: 1.5vmax;
+    }
+    
+    .section-one-text button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15vmax;
+        height: 4vmax;
+        font-size: 1.2vmax;
+        border: solid;
+        border-radius: 0.5vmax;
+        border-width: 0.2vmax;
+        border-color: rgba(3, 33, 112, 1);
+        color: rgba(3, 33, 112, 1);
+        background-color: transparent;
+        box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+
+    .find-candidate{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 8vmax;
+        margin-top: 15vmax;
+    }
+    
+    .find-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vmax;
+
+    }
+    
+    .find-image img{
+        width: 50vmax;
+        height: 21vmax;
+    }
+    
+    .find-text{
+        display: flex;
+        flex-direction: column;
+        width: 50vmax;
+    }
+
+    .build-company{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7.5vmax;
+        margin-top: 15vmax;
+    }
+        
+
+    .build-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        width: 50vmax;
+        height: 35vmax;
+        border-radius: 1vmax;
+    }
+    
+    .build-image img{
+        width: 46vmax;
+        height: 32vmax;
+    }*/
+
+    header{
+        background-image: url(img/hero-background.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        background-blend-mode: overlay;
+        background-color: rgba(0, 0, 0, 0.025);
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4vmax;
+        height: auto;
+    }
+    
+    .logo{
+        display: flex;
+        width: 10vmax;
+        height: 2vmax;
+    }
+
+    .logo img{
+        width: 13vmax;
+        height: 2.5vmax;
+    }
+    
+    .menu{
+        display: none;
+        justify-content: space-evenly;
+        width: 55vmax;
+    }
+    
+    .menu a{
+        font-size: 0.8vmax;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 1);
+    }
+    
+    .nav-buttons{
+        display: none;
+        gap: 2.5vmax;
+    }
+    
+    .hamburger{
+        display: flex;
+    }
+
+    .hamburger i{
+        font-size: 3vmax;
+    }
+    
+    .login{
+        font-size: 0.9vmax;
+        border: none;
+        background: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    .get-started{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8vmax;
+        border: solid;
+        border-width: 0.15vmax;
+        border-radius: 0.5vmax;
+        color: white;
+        width: 7.5vmax;
+        height: 3vmax;
+        border-color: rgba(255, 255, 255, 1);
+        background-color: rgba(3, 33, 112, 1);
+        box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+    
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 6vmax 4vmax;
+    }
+    
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 4vmax;
+    }
+    
+    .hero-text h1{
+        width: auto;
+        font-size: 5vmax;
+        margin: 0;
+        color: rgba(11, 50, 153, 1);
+        text-shadow: 
+            2px 2px 0 white,
+            -2px -2px 0 white,
+            -2px 2px 0 white,
+            2px -2px 0 white;
+    }
+    
+    .hero-text p{
+        width: auto;
+        font-size: 2.5vmax;
+        margin: 0;
+        color: rgba(0, 0, 0, 1);
+    
+    }
+    
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4vmax;
+        gap: 3.5vmax; 
+    }
+    
+    .hero-buttons .employers{ 
+        width: 20vmax;
+        height: 7vmax;
+        font-size: 2vmax;
+        font-weight: 700;
+        border: solid;
+        border-radius: 1vmax;
+        border-width: 0.3vmax;
+        border-color: white;
+        color: rgba(3, 33, 112, 1);
+        background-color: rgba(186, 205, 209, 1);
+        box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+    
+    .hero-buttons .candidates{ 
+        width: 20vmax;
+        height: 7vmax;
+        font-size: 2vmax;
+        font-weight: 700;
+        border: solid;
+        border-radius: 1vmax;
+        border-width: 0.3vmax;
+        border-color: white;
+        color: white;
+        background-color: rgba(3, 33, 112, 1);
+        box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+    
+    .section-one{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 8vmax 4vmax;
+        height: auto;
+        gap: 10vmax;
+        background: 
+          url('img/section-one-left.png') no-repeat left center,
+          url('img/section-one-right.png') no-repeat right center;
+        background-size: 25vmax 46vmax, 25vmax 46vmax;
+     }
+    
+    .section-one-text{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    
+    .section-one h1{
+        font-size: 4.5vmax;
+        margin-top: 0;
+        color: rgba(11, 50, 153, 1);
+      }
+    
+    .section-one-text p{
+        font-size: 2.5vmax;
+        margin-top: 0;
+        margin-bottom: 1vmax;
+    }
+    
+    .section-one-text .watch{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1.3vmax;
+    }
+    
+    .section-one-text i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4vmax;
+        height: 4vmax;
+        font-size: 1.5vmax;
+        color: white;
+        background-color: rgba(3, 33, 112, 1);
+        border-radius: 2vmax;
+    }
+    
+    .section-one-text button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20vmax;
+        height: 7vmax;
+        font-size: 2vmax;
+        border: solid;
+        border-radius: 0.8vmax;
+        border-width: 0.3vmax;
+        border-color: rgba(3, 33, 112, 1);
+        color: rgba(3, 33, 112, 1);
+        background-color: transparent;
+        box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+    
+    .section-one-video{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55vmax;
+        height: 28vmax;
+        color: white;
+        background-color: black;
+        border: none;
+        border-radius: 2vmax;
+        box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.25);
+    }
+    
+    .section-one-video i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5vmax;
+        width: 5vmax;
+        height: 5vmax;
+        border-radius: 2.5vmax;
+        background: linear-gradient(160deg, rgba(255, 255, 255, 1), rgba(251, 251, 251, 0.15));
+    }
+    
+    .section-hire-me{
+        display: flex;
+        flex-direction: column;
+        padding: 5vmax 4vmax;
+        height: auto;
+        background: 
+            url('img/hero-background.png') no-repeat top center,
+            url('img/hero-background.png') no-repeat bottom center;
+        background-size: 100vmax 46vmax, 100vmax 46vmax;
+        background-color: rgba(3, 25, 87, 1);
+        background-repeat: no-repeat;
+    }
+    
+    .section-hire-me .heading{
+        display: flex;
+        align-items: center;
+        gap: 1vmax;
+        font-size: 1.3vmax;
+        font-weight: 700;
+        color: white;
+    }
+    
+    .section-hire-me .heading span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15vmax;
+        height: 5vmax;
+        font-size: 2.3vmax;
+        font-weight: 700;
+        border-radius: 0.5vmax;
+        background-color: white;
+        color: rgba(11, 50, 153, 1);
+    }
+    
+    .section-hire-me .access-a-constant{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 4vmax;
+    }
+    
+    
+    .section-hire-me .access-a-constant .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vmax;
+    }
+    
+    
+    .section-hire-me .access-a-constant .cards .card1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 2.5vmax 3vmax;
+        margin: 5vmax 0vmax 1vmax 0vmax;
+        width: auto;
+        height: auto;
+        border-radius: 0.7vmax;
+        gap: 2.2vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1 img{
+        width: 8vmax;
+        height: 8vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1 .card1-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1  .card1-name{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1 .card1-text .card1-name h5{
+        font-size: 2vmax
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1 .card1-details{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.4vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card1 .card1-details p,i{
+        font-size: 1.5vmax;
+    }
+    
+    .graduate{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .university{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .location{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card1 .card1-buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5vmax;
+    }
+    
+    .card1-buttons button.application{
+        border: none;
+        background-color: rgba(3, 33, 112, 1);
+        color: white;
+        font-size: 1.5vmax;
+        font-weight: 300;
+        width: 20vmax;
+        height: 4vmax;
+        border-radius: 0.5vmax;
+    }
+    
+    .card1-buttons button.bookmark{
+        border: none;
+        background-color: rgba(216, 216, 216, 1);
+        color: rgba(139, 139, 139, 1);
+        font-size: 1.5vmax;
+        font-weight: 300;
+        width: 4vmax;
+        height: 4vmax;
+        border-radius: 0.5vmax;
+    }
+    
+    
+    .section-hire-me .access-a-constant .cards .card2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 2.5vmax 3vmax;
+        margin: 0.5vmax 0vmax 1vmax 0vmax;
+        width: auto;
+        height: auto;
+        border-radius: 0.7vmax;
+        gap: 2.2vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card2 img{
+        width: 8vmax;
+        height: 8vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card2 .card2-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card2 .card2-name{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card2 .card2-text .card2-name h5{
+        font-size: 2vmax
+    }
+    
+    .section-hire-me .access-a-constant .cards .card2 .card2-details{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.4vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card2 .card2-details p,i{
+        font-size: 1.5vmax;
+    }
+    
+    .graduate{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .university{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .location{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card2 .card2-buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.4vmax;
+    }
+    
+    .card2-buttons button.application{
+        border: none;
+        background-color: rgba(3, 33, 112, 1);
+        color: white;
+        font-size: 1.5vmax;
+        font-weight: 300;
+        width: 20vmax;
+        height: 4vmax;
+        border-radius: 0.5vmax;
+    }
+    
+    .card2-buttons button.bookmark{
+        border: none;
+        background-color: rgba(216, 216, 216, 1);
+        color: rgba(139, 139, 139, 1);
+        font-size: 1.5vmax;
+        font-weight: 300;
+        width: 4vmax;
+        height: 4vmax;
+        border-radius: 0.5vmax;
+    } 
+    
+    .section-hire-me .access-a-constant .cards .card3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 2.5vmax 3vmax;
+        margin: 0.5vmax 0vmax 1vmax 0vmax;
+        width: auto;
+        height: auto;
+        border-radius: 0.7vmax;
+        gap: 2.2vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card3 img{
+        width: 8vmax;
+        height: 8vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card3 .card3-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card3 .card3-name{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card3 .card3-text .card3-name h5{
+        font-size: 2vmax
+    }
+    
+    .section-hire-me .access-a-constant .cards .card3 .card3-details{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.4vmax;
+    }
+
+    .section-hire-me .access-a-constant .cards .card3 .card3-details p,i{
+        font-size: 1.5vmax;
+    }
+    
+    .graduate{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .graduate p{
+        font-size: 0.8vmax;
+    }
+    
+    .university{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .university p{
+        font-size: 0.8vmax;
+    }
+    
+    .location{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    
+    .location p{
+        font-size: 0.8vmax;
+    }
+    
+    .section-hire-me .access-a-constant .cards .card3 .card3-buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.4vmax;
+    }
+    
+    button.application{
+        border: none;
+        background-color: rgba(3, 33, 112, 1);
+        color: white;
+        font-size: 1.5vmax;
+        font-weight: 300;
+        width: 20vmax;
+        height: 4vmax;
+        border-radius: 0.5vmax;
+    }
+    
+    button.bookmark{
+        border: none;
+        background-color: rgba(216, 216, 216, 1);
+        color: rgba(139, 139, 139, 1);
+        font-size: 1.5vmax;
+        font-weight: 300;
+        width: 4vmax;
+        height: 4vmax;
+        border-radius: 0.5vmax;
+    }
+    
+    
+    .section-hire-me .access-a-constant .text{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 1.5vmax;
+        color: white;    
+    }
+    
+    .section-hire-me .access-a-constant .text h5{
+        font-size: 4.5vmax;
+        font-weight: 700;
+    }
+    
+    .section-hire-me .access-a-constant .text p{
+        font-size: 2.5vmax;
+        font-weight: 400;
+    }
+    
+    .easy-high-turnover{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 15vmax 0vmax 1vmax 0vmax;
+        gap: 15.5vmax;
+    }
+    
+    .card-easy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 2.5vmax 3vmax;
+        width: auto;
+        height: auto;
+        border-radius: 0.7vmax;
+        gap: 3vmax;
+    }
+    
+    .easy-profile{
+        display: flex;
+        align-items: center;
+        width: 10vmax;
+        height: 10vmax;
+    }
+    
+    .easy-profile img{
+        width: 10vmax;
+        height: 10vmax;
+    }
+    
+    
+    .card-easy-text{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vmax;
+    }
+    
+    .easy-name{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vmax;
+        font-weight: 700;
+    }
+    
+    .easy-details{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1vmax;
+        margin: 0vmax 0vmax 0.6vmax 0vmax;
+    }
+
+    .easy-details p,i{
+        font-size: 1.5vmax;
+    }
+    
+    .easy-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(3, 33, 112, 1);
+        height: 4vmax;
+        border-radius: 0.5vmax;
+    }
+    
+    .easy-button button{
+        border: none;
+        background-color:rgba(3, 33, 112, 1);
+        color: rgba(255, 255, 255, 1);
+        font-size: 1.5vmax;
+        font-weight: 700;
+        cursor: pointer;                
+    }
+    
+    .text-easy{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: auto;
+        gap: 1vmax;
+    }
+    
+    .text-easy h5{
+        font-size: 4.5vmax;
+        font-weight: 700;
+    }
+    
+    .text-easy p{
+        font-size: 2.5vmax;
+        font-weight: 400;
+    }
+    
+    .build-company{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7.5vmax;
+        margin-top: 15vmax;
+    }
+    
+    .build-text{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    
+    .build-text h5{
+        color: white;
+        font-size: 4.5vmax;
+        font-weight: 700;
+    }
+    
+    .build-text p{
+        color: white;
+        font-size: 2.5vmax;
+        font-weight: 400;
+    }
+    
+    .build-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        width: auto;
+        height: auto;
+        padding: 2vmax 2vmax;
+        border-radius: 1vmax;
+    }
+    
+    .build-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+    .find-candidate{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10.5vmax;
+        margin-top: 15vmax;
+        width: auto;
+    }
+    
+    .find-image{
+        display: flex;
+        width: auto;
+        height: auto;
+        margin-left: 0;
+    }
+    
+    .find-image img{
+        display: flex;
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .find-text{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+        
+    .find-text h5{
+        color: white;
+        font-size: 4.5vmax;
+        font-weight: 700;
+    }
+    
+    .find-text p{
+        color: white;
+        font-size: 2.5vmax;
+        font-weight: 400;
+    }
+    
+    .for-candidate{
+        display: flex;
+        flex-direction: column;
+        padding: 10vmax 4vmax;
+        height: auto;
+        background: url('img/hero-background.png') no-repeat bottom center;
+        background-color: rgba(0, 17, 63, 1);
+    }
+    
+    .for-candidate-heading{
+        display: flex;
+        align-items: center;
+        gap: 1vmax;
+        font-size: 1.3vmax;
+        font-weight: 700;
+        color: white;
+        margin-top: 3vmax;
+    }
+    
+    .for-candidate-heading span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15vmax;
+        height: 5vmax;
+        font-size: 2.3vmax;
+        font-weight: 700;
+        border-radius: 0.5vmax;
+        background-color: white;
+        color: rgba(11, 50, 153, 1);
+    }
+    
+    .for-candidate-details{
+        display: flex;
+        margin-top: 5vmax;
+        gap: 9vmax;
+    }
+    
+    .for-candidate-images{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        gap: 5vmax;
+    }
+    
+    .UI-Design{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 30vmax;
+        height: 40vmax;
+        text-align: left;
+    }
+    
+    .UI-Design img{
+        margin-top: 1.4vmax;
+        width: 27vmax;
+        height: 32vmax;
+    }
+    
+    .UI-Design p{
+        font-size: 2.5vmax;
+        font-weight: 700;
+        margin-top: 1vmax;
+        margin-left: -2.5vmax;
+    }
+    
+    .data-analyst{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 30vmax;
+        height: 40vmax;
+        text-align: left;
+    }
+    
+    .data-analyst img{
+        margin-top: 1.4vmax;
+        width: 27vmax;
+        height: 32vmax;
+    }
+    
+    .data-analyst p{
+        font-size: 2.5vmax;
+        font-weight: 700;
+        margin-top: 1vmax;
+        margin-left: -2.5vmax;
+    }
+    
+    .graphic-design{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 30vmax;
+        height: 40vmax;
+        text-align: left;
+    }
+    
+    .graphic-design img{
+        margin-top: 1.4vmax;
+        width: 27vmax;
+        height: 32vmax;
+    }
+    
+    .graphic-design p{
+        font-size: 2.5vmax;
+        font-weight: 700;
+        margin-top: 1vmax;
+        margin-left: 0;
+    }
+    
+    .trainee{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 30vmax;
+        height: 40vmax;
+        text-align: left;
+    }
+    
+    .trainee img{
+        margin-top: 1.4vmax;
+        width: 27vmax;
+        height: 32vmax;
+    }
+    
+    .trainee p{
+        font-size: 2.5vmax;
+        font-weight: 700;
+        margin-top: 1vmax;
+        margin-left: -5vmax;
+    }
+    
+    .for-candidate-text{
+        display: flex;
+        flex-direction: column;
+        gap: 6vmax;
+        width: auto;
+    }
+    
+    .for-candidate-text p{
+        font-size: 4.5vmax;
+        font-weight: 700;
+        line-height: 5vmax;
+        color: white;
+    } 
+    
+    .for-candidate-text span{
+        font-size: 2.5vmax;
+        font-weight: 400;
+        line-height: 3vmax;
+        color: white;
+    } 
+    
+    
+    .section-feature{
+        display: flex;
+        flex-direction: column;
+        padding: 7vmax 4vmax;
+        height: auto;
+        background: url('img/hero-background.png') no-repeat bottom center;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .section-feature .heading h1{
+        font-size: 2.3vmax;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+     
+    .section-feature .heading .line-under-heading{
+        width: 4vmax;
+        height: 0.9vmax;
+        border-radius: 1vmax;
+        background-color: rgba(3, 33, 112, 1);
+        margin-top: 0.5vmax;
+        margin-left: 0.5vmax;
+    }
+    
+    .feature-options{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6vmax;
+        margin-top: 4vmax;
+    }
+    
+    .resume-builder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2.1vmax 2.1vmax 0 2vmax;
+        width: 45vmax;
+        height: 65vmax;
+        gap: 2.5vmax;
+        border-radius: 2vmax;
+        background-color: rgba(244, 246, 251, 1);
+        overflow: hidden;
+    }
+    
+    .resume-builder h3{
+        font-size: 3.5vmax;
+        font-weight: 700;
+        color: rgba(3, 49, 172, 1);
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    .resume-builder p{
+        font-size: 1.9vmax;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    .resume-builder .learn-more{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1vmax;
+        border: solid;
+        border-radius: 0.5vmax;
+        border-width: 0.2vmax;
+        border-color: rgba(3, 33, 112, 1);
+        color: rgba(3, 33, 112, 1);
+        background-color: transparent;
+        width: 15vmax;
+        height: 4vmax;
+        font-size: 1.5vmax;
+        font-weight: 600;
+    }
+    
+    .resume-builder img{
+        display: flex;
+        width: 95%;
+        height: 60%;
+        object-fit: contain;
+    }
+    
+    .online-events{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2.1vmax 2.1vmax 0 2vmax;
+        width: 45vmax;
+        height: 65vmax;
+        gap: 2vmax;
+        border-radius: 2vmax;
+        background-color: rgba(244, 246, 251, 1);
+        overflow: hidden;
+    }
+    
+    .online-events h3{
+        font-size: 3.5vmax;
+        font-weight: 700;
+        color: rgba(3, 49, 172, 1);
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    .online-events p{
+        font-size: 1.9vmax;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    .online-events .learn-more{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1vmax;
+        border: solid;
+        border-radius: 0.5vmax;
+        border-width: 0.2vmax;
+        border-color: rgba(3, 33, 112, 1);
+        color: rgba(3, 33, 112, 1);
+        background-color: transparent;
+        width: 15vmax;
+        height: 4vmax;
+        font-size: 1.5vmax;
+        font-weight: 600;
+    }
+    
+    .online-events img{
+        display: flex;
+        width: 95%;
+        height: 55%;
+        object-fit: contain;
+        object-position: bottom;
+    }
+    
+    .Job-Boards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2.1vmax 2.1vmax 0 2vmax;
+        width: 45vmax;
+        height: 65vmax;
+        gap: 2.5vmax;
+        border-radius: 2vmax;
+        background-color: rgba(244, 246, 251, 1);
+        overflow: hidden;
+    }
+    
+    .Job-Boards h3{
+        font-size: 3.5vmax;
+        font-weight: 700;
+        color: rgba(3, 49, 172, 1);
+        margin: 0;
+    }
+    
+    .Job-Boards p{
+        font-size: 1.9vmax;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    .Job-Boards .learn-more{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1vmax;
+        border: solid;
+        border-radius: 0.5vmax;
+        border-width: 0.2vmax;
+        border-color: rgba(3, 33, 112, 1);
+        color: rgba(3, 33, 112, 1);
+        background-color: transparent;
+        width: 15vmax;
+        height: 4vmax;
+        font-size: 1.5vmax;
+        font-weight: 600;
+    }
+    
+    .Job-Boards img{
+        display: flex;
+        width: 95%;
+        height: 60%;
+        object-fit: contain;
+    }
+    
+    .Partnership{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2.1vmax 2.1vmax 0 2vmax;
+        width: 45vmax;
+        height: 65vmax;
+        gap: 2.5vmax;
+        border-radius: 2vmax;
+        background-color: rgba(244, 246, 251, 1);
+        overflow: hidden;
+    }
+    
+    .Partnership h3{
+        font-size: 3.5vmax;
+        font-weight: 700;
+        color: rgba(3, 49, 172, 1);
+        margin: 0;
+    }
+    
+    .Partnership p{
+        font-size: 1.9vmax;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    .Partnership .learn-more{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1vmax;
+        border: solid;
+        border-radius: 0.5vmax;
+        border-width: 0.2vmax;
+        border-color: rgba(3, 33, 112, 1);
+        color: rgba(3, 33, 112, 1);
+        background-color: transparent;
+        width: 15vmax;
+        height: 4vmax;
+        font-size: 1.5vmax;
+        font-weight: 600;
+    }
+    
+    .Partnership img{
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        height: 60%;
+        object-fit: contain;
+    }
+    
+    .platform{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 8vmax;
+        margin-top: 15vmax;
+    }
+    
+    .platform-heading h1{
+        width: auto;
+        font-size: 4.5vmax;
+        font-weight: 700;
+        color:rgba(3, 49, 172, 1);
+    }
+    
+    .platform-cards{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        gap: 3vmax;
+    }
+    
+    .platform-card1{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding: 3vmax 2.8vmax;
+        gap: 2vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card1 h4{
+        margin: 0;
+        font-size: 3vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card1 p{
+        font-size: 1.9vmax;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .platform-card2{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding: 3vmax 2.8vmax;
+        gap: 1vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card2 h4{
+        margin: 0;
+        font-size: 3vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card2 p{
+        font-size: 1.9vmax;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .platform-card3{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding: 3vmax 2.8vmax;
+        gap: 1vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card3 h4{
+        margin: 0;
+        font-size: 3vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card3 p{
+        font-size: 1.9vmax;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .platform-card4{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding: 3vmax 2.8vmax;
+        gap: 1vmax;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1vmax;
+        box-shadow: 17px 21px 35px 9px rgba(0, 0, 0, 0.205);
+    }
+    
+    .platform-card4 h4{
+        margin: 0;
+        font-size: 3vmax;
+        color: rgba(3, 33, 112, 1);
+    }
+    
+    .platform-card4 p{
+        font-size: 1.9vmax;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .recruit-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background-image: url(img/Recruit-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: overlay;
+        background-color: rgba(28, 28, 28, 0.4);
+        height: auto;
+        margin-top: 5vmax;
+        padding: 8vmax 6vmax;
+        color: white;
+    }
+    
+    .recruit-section h3{
+        font-size: 4.5vmax;
+        font-weight: 700;
+        margin: 0;
+    }
+    
+    .recruit-section p{
+        font-size: 2.7vmax;
+        font-weight: 400;
+        margin: 0;
+    }
+    
+    .recruit-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5vmax;
+        width: auto;
+    }
+    
+    .recruit-button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1vmax;
+        border: solid;
+        border-color: white;
+        border-width: 0.25vmax;
+        border-radius: 0.8vmax;
+        color: white;
+        background-color: transparent;
+        width: 20vmax;
+        height: 7vmax;
+        font-size: 2vmax;
+        font-weight: 600;
+        transition: 0.15s;
+    }
+    
+    .recruit-button:hover{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1vmax;
+        border: solid;
+        border-color: white;
+        border-radius: 0.8vmax;
+        color: black;
+        background-color: white;
+        width: 20vmax;
+        height: 7vmax;
+        font-size: 2vmax;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 7vmax 4vmax;
+        gap: 10vmax;
+        color: white;
+        background-color: rgba(3, 33, 112, 1);
+    }
+    
+    footer h4{
+        font-size: 2.5vmax;
+        margin: 0;
+        margin-bottom: 0.6vmax;
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: white;
+        font-size: 2.1vmax;
+    }
+    
+    footer .details{
+        display: flex;
+        flex-direction: column;
+        gap: 2.2vmax;
+        width: auto;
+    }
+    
+    footer .details .logo{
+        width: 20vmax;
+        height: 5.5vmax;
+    }
+    
+    footer .details .logo img{
+        width: 20vmax;
+        height: 5.5vmax;
+    }
+    
+    footer .details .vision p{
+        font-size: 2.5vmax;
+        font-weight: 400;
+    }
+    
+    footer .details .contact p{
+        font-size: 2.2vmax;
+        font-weight: 400;
+    }
+    
+    .social-icons{
+        display: flex;
+        flex-direction: row;
+        gap: 2vmax;
+    }
+    
+    .social-icons i{
+        font-size: 2.5vmax;
+        font-weight: 400;
+    }
+    
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 4vmax;
+    }
+    
+    
+    .products{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+    } 
+    
+    .company{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+    }
+    
+    .resources{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+    }
+    
+    .support{
+        display: flex;
+        flex-direction: column;
+        gap: 1vmax;
+    }
+    
+    .copyrights{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 23, 84, 1);
+        color: white;
+        height: 6vmax;
+    }
+    
+    .copyrights h1{
+        font-size: 1.5vmax;
+        font-weight: 700;
+    }
+    
+}
+
+
